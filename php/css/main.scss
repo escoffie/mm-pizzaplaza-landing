@@ -1,0 +1,27 @@
+/* Bootstrap overrides */
+
+$theme-colors: (
+    'primary': #754100,
+    'secondary': #f6c91d,
+    'light': #e4e1d6
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../images/bg.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: theme_color('primary');
+}
+
+/* específicos */
+
+#hero {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10em 0;
+}
