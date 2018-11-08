@@ -14,9 +14,9 @@
     <!-- Ini Navegación principal -->
 
     <nav id="mainNav" class="sticky-top bg-secondary shadow">
-        <div class="container d-none d-md-block">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4 text-left">
+                <div class="col-md-4 text-left d-none d-md-block">
                     <ul class="list-inline m-0">
                         <li class="list-inline-item"><a href="">Enlace 1</a></li>
                         <li class="list-inline-item"><a href="">Enlace 2</a></li>
@@ -28,7 +28,7 @@
                         <br>{{sucursal.name}}
                     </a>
                 </div>
-                <div class="col-md-4 text-right">
+                <div class="col-md-4 text-right d-none d-md-block">
                     <ul class="list-inline m-0">
                         <li class="list-inline-item"><a href="">Enlace 1</a></li>
                         <li class="list-inline-item"><a href="">Enlace 2</a></li>
@@ -78,9 +78,12 @@
     <section id="botones-movil" class="d-md-none fixed-bottom text-center bg-light py-2">
         <div class="container">
             <div class="row">
-                <div class="col btn-group">
-                    <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}" class="btn btn-primary"><i class="fa fa-phone"></i><br>Llama ahora</a>
-                    <a href="https://api.whatsapp.com/send?phone={{sucursal.whatsapp}}" class="btn btn-secondary text-primary"><i class="fab fa-whatsapp"></i><br>Pide por WhatsApp</a>
+                <div class="col">
+                    <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}" class="btn btn-primary btn-block"><i class="fa fa-phone fa-3x"></i><br>Llama ahora</a>
+                </div>
+                <div class="col">
+                    <a href="https://api.whatsapp.com/send?phone={{sucursal.whatsapp}}" class="btn btn-secondary text-primary btn-block"><i class="fab fa-whatsapp fa-3x"></i><br>Por WhatsApp</a>
+
                 </div>
             </div>
         </div>
