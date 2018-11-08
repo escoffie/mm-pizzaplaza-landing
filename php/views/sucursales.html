@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{general.brand}} - {{sucursal.nombre}}</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Engagement|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-light" id="top">
+
+    <!-- Ini Navegación principal -->
+
+    <nav id="mainNav" class="sticky-top bg-secondary shadow text-center">
+
+        <div class="jagged-secondary-to-primary px-5 px-md-0">
+            <a href="#top" class="js-scroll-trigger"><img src="../images/logo.png" alt="{{brand}}" class="img-fluid"></a>
+        </div>
+        <div class="bg-primary text-secondary">
+            <strong>Sucursales</strong>
+        </div>
+
+    </nav>
+
+    <!-- End Navegación principal -->
+
+
+    <!-- Ini Mapa -->
+    <section id="map" class="jagged-light-to-secondary text-center bg-light pb-5">
+        <div class="container">
+
+            <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-8">
+                    <ul class="list-inline">
+                        <h2 class="display-4 py-2">Sucursales</h2>
+                        <p>Escoge la que te queda más cerca, y haz tu pedido.</p>
+                        {% for suc in sucursales %}
+                        <li class="list-inline-item">
+                            <p><a href="{{suc.url}}">{{suc.nombre}}</a></p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <h2 class="display-4">Horarios</h2>
+                    <ul class="list-unstyled">
+                        <li>Lunes a viernes: 12:00 a 23:30 horas.</li>
+                        <li>Viernes a domingo: 12:00 a 00:00 horas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Mapa -->
+
+
+    <!-- Ini Acerca -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-sm-10 col-md-8 text-center">
+                    <p>Somos una pizzería familiar con más de {{ general.years }} años, fundada en 1978. Nuestra
+                        primera sucursal se ubica en el Sur de la Ciudad de México.</p>
+                    <hr class="mx-3">
+                    <p class="small">Las mejores Pizzas de la Ciudad de México. Hacemos pizzas en serio, no en serie.</p>
+                    <hr class="mx-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Acerca -->
+
+    <!-- Ini Footer -->
+    <footer id="pie" class="bg-secondary pb-5 pb-md-0">
+        <div class="container pb-5 pb-md-0">
+            <div class="row py-5">
+                <div class="col text-center">
+                    Precios sujetos a cambios sin previo aviso. Consulte los precios en la sucursal correspondiente.<br>
+                    <a target="_blank" href="http://www.pizzasplaza.com/terminos-y-condiciones/">Términos y condiciones</a>
+                    |
+                    <a target="_blank" href="http://www.pizzasplaza.com/aviso-de-privacidad/">Aviso de privacidad</a> |
+                    © {{general.thisYear}} Pizzas Plaza. Todos los derechos reservados. </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script src="js/acciones.js"></script>
+
+</body>
+
+</html>
