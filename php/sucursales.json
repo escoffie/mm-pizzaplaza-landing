@@ -1,0 +1,115 @@
+[
+    {
+        "nombre": "Xochimilco ",
+        "direccion": "Tierra y Libertad 69 Entrada por Prol. Div. del Norte. Salida por Tierra y Libertad San Lorenzo La Cebada Delegación Xochimilco México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.1158232633784!2d-99.12439028461397!3d19.277328750621493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce016ce631b757%3A0x8e5aa7c8089180cc!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541705467491",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5552 5256", 
+            "5653 7701", 
+            "5653 7715", 
+            "5653 7788"
+        ],
+        "url": "xochimilco"
+    },
+    {
+        "nombre": "Renato Leduc",
+        "direccion": "Coscomate No. 104 Esq. Renato Leduc, Colonia Toriello Guerra, Delegación Tlalpan, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6789120427443!2d-99.16039338463554!3d19.296324550023332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00598b5e5253%3A0x3329a54468a71a02!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704147010",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5424 2883", 
+            "5424 2643", 
+            "5528 1025"
+        ],
+        "url": "renato-leduc"
+    },
+    {
+        "nombre": "Coyoacán",
+        "direccion": "Miguel Angel de Quevedo No. 660, Esq. Felipe Carrillo Puerto, Delegación Coyoacán, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.561288603848!2d-99.16609928463504!3d19.344834348492995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd4198d1f1b%3A0xb1ed5e0e3122999d!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704183611",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5554 3740", 
+            "5659 8889", 
+            "5554 4883", 
+            "5658 6653"
+        ],
+        "url": "coyoacan"
+    },
+    {
+        "nombre": "División",
+        "direccion": "División del Norte No. 1271, Esq. Tenayuca, Colonia Narvarte, Delegación Benito Juárez, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.8301510909164!2d-99.16088508463478!3d19.376505747491805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffa5a57652a7%3A0x1245a034dc9f0b8a!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704232176",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5604 2074", 
+            "5604 7915", 
+            "5604 6501"
+        ],
+        "url": "division"
+    },
+    {
+        "nombre": "Universidad",
+        "direccion": "Bajo Puente Río Churubusco y Universidad, Delegación Coyoacán, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.227442966022!2d-99.17366768463498!3d19.359302048035865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffeb161f8375%3A0xbddcd7dcf9fc930e!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704264123",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5663 5223", 
+            "5663 5222", 
+            "5663 5225", 
+            "5663 5226"
+        ],
+        "url": "universidad"
+    },
+    {
+        "nombre": "Miramontes",
+        "direccion": "Canal de Miramontes No. 2783 – B, Esq. Malvas, Delegación Coyoacán, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.2449520282657!2d-99.12695598463532!3d19.315174249429045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01bfed74cf43%3A0x6a181d8ae05b58e4!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704293885",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5677 9802", 
+            "5684 1668", 
+            "5679 6128", 
+            "5684 8397"
+        ],
+        "url": "miramontes"
+    },
+    {
+        "nombre": "Cafetales",
+        "direccion": "Cafetales No. 1726, Esq. Rancho Estopila, Delegación Coyoacán, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4979593935377!2d-99.11435928463541!3d19.304186649775573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01855297d217%3A0x79d66222f64c42a!2sPizzas+Plaza+Cafetales!5e0!3m2!1ses-419!2smx!4v1541704316480",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5671 7915", 
+            "5671 9124", 
+            "5671 9130", 
+            "5671 7923", 
+            "5671 9195"
+        ],
+        "url": "cafetales"
+    },
+    {
+        "nombre": "Santa Ana",
+        "direccion": "Av. Ejido San Fco. Culhuacan No. 192, Esq. Santa Ana, Col. Presidentes Ejidales, Delegación Coyoacán, México CDMX",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.9184003633113!2d-99.13048098463523!3d19.32934684898194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01dc98264fa5%3A0xf972cea4e78d5906!2sPizzas+Plaza!5e0!3m2!1ses-419!2smx!4v1541704350004",
+        "whatsapp": "2525 4840",
+        "telefonos": [
+            "5695 5646", 
+            "5695 4971", 
+            "5695 7018", 
+            "5656 5561", 
+            "5695 4051", 
+            "5656 7057"
+        ],
+        "url": "santa-ana"
+    },
+    {
+        "nombre": "Paseo Hipódromo",
+        "direccion": "Paseo Hipódromo PB, Av. Conscripto 360, Col. Lomas Hipódromo, Naucalpan de Juárez, Edo. de México",
+        "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5697123917457!2d-99.24060728461261!3d19.43098884576622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d203d5cab00001%3A0x9511e1005d134f76!2sPizzas+Plaza+Hip%C3%B3dromo!5e0!3m2!1ses-419!2smx!4v1541703794271",
+        "whatsapp": "2525 4840",
+        "telefonos": ["5925 8024"],
+        "url": "paseo-hipodromo"
+    }
+]
