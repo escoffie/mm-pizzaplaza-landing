@@ -15,13 +15,63 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: theme_color('primary');
+    font-family: 'Engagement', cursive;
 }
 
 /* específicos */
+
+.jagged-primary-to-secondary {
+    background: linear-gradient(-135deg, theme_color('primary') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('primary') 5px, theme_color('secondary') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+.jagged-secondary-to-primary {
+    background: linear-gradient(-135deg, theme_color('secondary') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('secondary') 5px, theme_color('primary') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+
+.jagged-light-to-primary {
+    background: linear-gradient(-135deg, theme_color('light') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('light') 5px, theme_color('primary') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+.jagged-light-to-secondary {
+    background: linear-gradient(-135deg, theme_color('light') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('light') 5px, theme_color('secondary') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+.jagged-primary-to-light {
+    background: linear-gradient(-135deg, theme_color('primary') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('primary') 5px, theme_color('light') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+.jagged-secondary-to-light {
+    background: linear-gradient(-135deg, theme_color('secondary') 5px, transparent 0) 0 5px, linear-gradient(135deg, theme_color('secondary') 5px, theme_color('light') 0) 0 5px;;
+    background-size: 10px 10px; 
+    background-position: left bottom !important;
+    background-repeat: repeat-x !important;
+}
+
+
 
 #hero {
     background-image: url(../images/hero-bg.jpg);
     background-position: center;
     background-size: cover;
-    padding: 10em 0;
+    padding: 3em 0 10em 0;
+
+    #call-to-action {
+        background-color: rgba(#ffffff, 0.75);
+    }
 }

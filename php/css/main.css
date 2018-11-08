@@ -9525,13 +9525,60 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #754100;
+  font-family: 'Engagement', cursive;
 }
 
 /* específicos */
+.jagged-primary-to-secondary {
+  background: linear-gradient(-135deg, #754100 5px, transparent 0) 0 5px, linear-gradient(135deg, #754100 5px, #f6c91d 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
+.jagged-secondary-to-primary {
+  background: linear-gradient(-135deg, #f6c91d 5px, transparent 0) 0 5px, linear-gradient(135deg, #f6c91d 5px, #754100 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
+.jagged-light-to-primary {
+  background: linear-gradient(-135deg, #e4e1d6 5px, transparent 0) 0 5px, linear-gradient(135deg, #e4e1d6 5px, #754100 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
+.jagged-light-to-secondary {
+  background: linear-gradient(-135deg, #e4e1d6 5px, transparent 0) 0 5px, linear-gradient(135deg, #e4e1d6 5px, #f6c91d 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
+.jagged-primary-to-light {
+  background: linear-gradient(-135deg, #754100 5px, transparent 0) 0 5px, linear-gradient(135deg, #754100 5px, #e4e1d6 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
+.jagged-secondary-to-light {
+  background: linear-gradient(-135deg, #f6c91d 5px, transparent 0) 0 5px, linear-gradient(135deg, #f6c91d 5px, #e4e1d6 0) 0 5px;
+  background-size: 10px 10px;
+  background-position: left bottom !important;
+  background-repeat: repeat-x !important;
+}
+
 #hero {
   background-image: url(../images/hero-bg.jpg);
   background-position: center;
   background-size: cover;
-  padding: 10em 0;
+  padding: 3em 0 10em 0;
+}
+
+#hero #call-to-action {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 /*# sourceMappingURL=main.css.map */

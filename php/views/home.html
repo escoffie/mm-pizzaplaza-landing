@@ -4,53 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
+    <title>{{general.brand}} - {{sucursal.name}}</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Engagement|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="bg-light">
 
     <!-- Ini Navegación principal -->
-    <div id="mainNav">
 
-        <nav class="sticky-top bg-secondary shadow">
-            <div class="container d-none d-md-block">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-left">
-                        <ul class="list-inline m-0">
-                            <li class="list-inline-item"><a href="">Enlace 1</a></li>
-                            <li class="list-inline-item"><a href="">Enlace 2</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <a href="#mainNav"><img src="../images/logo.png" alt="{{brand}}" class="img-fluid"></a>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <ul class="list-inline m-0">
-                            <li class="list-inline-item"><a href="">Enlace 1</a></li>
-                            <li class="list-inline-item"><a href="">Enlace 2</a></li>
-                        </ul>
-                    </div>
+    <nav id="mainNav" class="sticky-top bg-secondary shadow">
+        <div class="container d-none d-md-block">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-left">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="">Enlace 1</a></li>
+                        <li class="list-inline-item"><a href="">Enlace 2</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#mainNav">
+                        <img src="../images/logo.png" alt="{{brand}}" class="img-fluid">
+                        <br>{{sucursal.name}}
+                    </a>
+                </div>
+                <div class="col-md-4 text-right">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="">Enlace 1</a></li>
+                        <li class="list-inline-item"><a href="">Enlace 2</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
         
-    </div>
     <!-- End Navegación principal -->
 
     <!-- Ini Hero -->
     <header id="hero" class="shadow">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    <img src="../images/logo-grande.png" alt="{{brand}}">
+                <div class="col-md text-center rounded p-2 order-md-2" id="call-to-action">
+                    <p><img src="../images/logo-grande.png" alt="{{brand}}"></p>
+                    <p class="text-primary">Hechas en serio, no en serie</p>
+                    <p class="d-none d-md-block">
+                        <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}" class="btn btn-primary btn-lg"><i class="fa fa-phone"></i> Llama ahora</a>
+                        <a href="https://api.whatsapp.com/send?phone={{sucursal.whatsapp}}" class="btn btn-secondary text-primary btn-lg"><i class="fab fa-whatsapp"></i> Pide por WhatsApp</a>
+                    </p>
+                </div>
+                <div class="col-md">
+                    <ul>
+                        {% for telefono in sucursal.telefonos %}
+                        <li>{{telefono}}</li>
+                        {% endfor %}
+                    </ul>
+                    <p>{{sucursal.direccion|nl2br}}</p>
                 </div>
             </div>
         </div>
     </header>
     <!-- End Hero -->
+
+    <section id="about" class="jagged-secondary-to-light py-5">
+        <h2>Acerca de</h2>
+    </section>
+
+    <section id="map">
+            <iframe src="{{sucursal.gmaps}}" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+    </section>
+
+    <!-- Botones móvil -->
+    <section id="botones-movil" class="d-md-none fixed-bottom text-center bg-light py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col btn-group">
+                    <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}" class="btn btn-primary"><i class="fa fa-phone"></i><br>Llama ahora</a>
+                    <a href="https://api.whatsapp.com/send?phone={{sucursal.whatsapp}}" class="btn btn-secondary text-primary"><i class="fab fa-whatsapp"></i><br>Pide por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
