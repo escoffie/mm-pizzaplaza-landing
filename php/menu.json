@@ -7,185 +7,176 @@
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza-10-1-002-e1487015865215-940x551.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Camarón",
                 "imagen": "",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Anchoa",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza-5-1-002-e1487016235159-940x563.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Atún",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza008-e1487016382853-940x577.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Pepperoni",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/pepperoni-2-940x581.jpg",
                 "descripcion": "",
                 "destacada": true,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Lomo Canadiense",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza-012001-e1487016617105-940x533.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Salchicha Italiana",
                 "imagen": "",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Salami",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/pizza-salami0003-940x554.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Tocino",
                 "imagen": "",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Jamón",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/pizza-jamon0004-940x624.jpg",
                 "descripcion": "",
                 "destacada": true,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Chorizo",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza-011001-e1487016816962-940x506.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 145,
-                "mediana": 175,
-                "grande": 205
+                "chica": 155,
+                "mediana": 185,
+                "grande": 215
             },
             {
                 "nombre": "Pizza de Jalapeño",
                 "imagen": "",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 125,
-                "mediana": 150,
-                "grande": 175
+                "chica": 135,
+                "mediana": 160,
+                "grande": 185
             },
             {
                 "nombre": "Pizza de Champiñón",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza030-e1487016996572-940x459.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 125,
-                "mediana": 150,
-                "grande": 175
+                "chica": 135,
+                "mediana": 160,
+                "grande": 185
             },
             {
                 "nombre": "Pizza de Aceituna",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza001-940x460.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 125,
-                "mediana": 150,
-                "grande": 175
+                "chica": 135,
+                "mediana": 160,
+                "grande": 185
             },
             {
                 "nombre": "Pizza de Cebolla",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza024-e1487017250905-940x469.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 125,
-                "mediana": 150,
-                "grande": 175
+                "chica": 135,
+                "mediana": 160,
+                "grande": 185
             },
             {
                 "nombre": "Pizza de Pimiento Verde",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizzas-Plaza027-e1487017390477-940x605.jpg",
                 "descripcion": "",
                 "destacada": false,
-                "chica": 125,
-                "mediana": 150,
-                "grande": 175
+                "chica": 135,
+                "mediana": 160,
+                "grande": 185
             },
             {
                 "nombre": "Pizza de queso",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/Pizza-de-queso20120528_0006-300x200.jpg",
                 "descripcion": "",
                 "destacada": true,
-                "chica": 105,
-                "mediana": 125,
-                "grande": 150
-            },
-            {
-                "nombre": "Pizza Plaza Mexicana",
-                "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2013/06/slider_00-300x200.png",
-                "descripcion": "Jamón, Chorizo, Lomo Canadiense, Salami, Pepperoni, Champiñones, Pimiento Verde, Cebolla y Jalapeños.",
-                "destacada": true,
-                "chica": 175,
-                "mediana": 205,
-                "grande": 235
+                "chica": 115,
+                "mediana": 135,
+                "grande": 160
             }
         ],
         "extras": [
             {
                 "nombre": "Extra Queso",
                 "chica": 15,
-                "mediana": 30,
-                "grande": 30
+                "mediana": 20,
+                "grande": 25
             },
             {
-                "nombre": "Extra Marisco",
-                "chica": 13,
-                "mediana": 30,
-                "grande": 30
+                "nombre": "Extra Mariscos",
+                "chica": 15,
+                "mediana": 20,
+                "grande": 25
             },
             {
-                "nombre": "Extra Carne",
-                "chica": 10,
-                "mediana": 30,
-                "grande": 30
+                "nombre": "Extra Carnes",
+                "chica": 15,
+                "mediana": 20,
+                "grande": 25
             },
             {
-                "nombre": "Extra Verdura",
+                "nombre": "Extra Vegetales",
                 "chica": 5,
                 "mediana": 10,
                 "grande": 15 
@@ -291,131 +282,177 @@
         "tipo": "Especialidades",
         "productos":[
             {
-                "nombre": "Pizza Plaza Suprema",
-                "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Fotos_Restantes_Pizza_Plaza_9_-300x200.jpg",
-                "descripcion": "Salami, Pepperoni, Lomo Canadiense, Jamón y Tocino.",
-                "destacada": false,
-                "chica": 175,
-                "mediana": 205,
-                "grande": 235
-            },
-            {
                 "nombre": "Pizza Plaza de Alambre",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza-11-0001-140x93.jpg",
                 "descripcion": "Pimiento Verde, Cebolla, Carne al Pastor y Tocino.",
                 "destacada": false,
-                "chica": 175,
-                "mediana": 205,
-                "grande": 235
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
             },
             {
                 "nombre": "Pizza Plaza Rústica",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Pizzas-Plaza-4-2-002-1-e1487018856409-140x93.jpg",
                 "descripcion": "Mezcla de Pepperoni, Salami, Lomo Canadiense y Aceite de Albahaca.",
                 "destacada": false,
-                "chica": 175,
-                "mediana": 205,
-                "grande": 235
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
+            },
+            {
+                "nombre": "Pizza Plaza Suprema",
+                "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Fotos_Restantes_Pizza_Plaza_9_-300x200.jpg",
+                "descripcion": "Salami, Pepperoni, Lomo Canadiense, Jamón y Tocino.",
+                "destacada": false,
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
+            },
+            {
+                "nombre": "Pizza Plaza 4 Quesos",
+                "imagen": "",
+                "descripcion": "Nuestro queso original, parmesano, de cabra y mozzarela fresco.",
+                "destacada": true,
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
+            },
+            {
+                "nombre": "Pizza Plaza Mexicana",
+                "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2013/06/slider_00-300x200.png",
+                "descripcion": "Jamón, Chorizo, Lomo Canadiense, Salami, Pepperoni, Champiñones, Pimiento Verde, Cebolla y Jalapeños.",
+                "destacada": true,
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
+            },
+            {
+                "nombre": "Pizza Plaza de Mariscos",
+                "imagen": "",
+                "descripcion": "Anchoas, ostiones ahumados, camarones, champiñones y cebolla.",
+                "destacada": true,
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
+            },
+            {
+                "nombre": "Pizza Plaza del Campo",
+                "imagen": "",
+                "descripcion": "Champiñones, queso de cabra y cebollín.",
+                "destacada": true,
+                "chica": 185,
+                "mediana": 215,
+                "grande": 245
             },
             {
                 "nombre": "Especial Vegetariana",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza-9-0002-300x200.jpg",
                 "descripcion": "Aceitunas, Champiñones, Pimiento Verde, Cebolla y Jalapeño.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Especial Italiana",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza_2_0002-140x93.jpg",
                 "descripcion": "Pepperoni, Salchicha Italiana, Champiñones, Pimiento Verde y Cebolla.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Especial de Pastor",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza-8-0005-140x93.jpg",
                 "descripcion": "Carne al Pastor, Piña y Cebolla.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Especial de Pepperoni",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Fotos_Restantes_Pizza_Plaza_4_-140x93.jpg",
                 "descripcion": "Pepperoni  y Champiñones.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Especial de la Hortaliza",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Pizzas-Plaza-9001-e1487019142925-140x93.jpg",
                 "descripcion": "Pimiento Verde, Champiñones, Cebolla y Extra Queso.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Texas",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza_7_0003-140x93.jpg",
                 "descripcion": "Salchicha Italiana, Cebolla, Tocino y Jalapeños.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Americana",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza_1_0015-300x200.jpg",
                 "descripcion": "Lomo canadiense, champiñón y tocino.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Especial de Atún",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/pizza-13-0002-140x93.jpg",
                 "descripcion": "Atún, Jalapeño y Cebolla.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Campirana",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2016/12/pizza-14-0003-140x93.jpg",
                 "descripcion": "Chorizo, Frijoles, Jalapeños y Cebolla.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Hawaiana",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/pizza_hawaina0004-300x200.jpg",
                 "descripcion": "Jamón y Piña.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             },
             {
                 "nombre": "Griega",
                 "imagen": "http://www.pizzasplaza.com/wp-content/uploads/2017/01/Fotos_Restantes_Pizza_Plaza_6_-140x93.jpg",
                 "descripcion": "Salami, Cebolla, Pimiento y Aceituna.",
                 "destacada": false,
-                "chica": 160,
-                "mediana": 190,
-                "grande": 220
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
+            },
+            {
+                "nombre": "Especial Combinada",
+                "imagen": "",
+                "descripcion": "Jamón, salami, pepperoni, pimiento verde, champiñones y cebolla.",
+                "destacada": false,
+                "chica": 170,
+                "mediana": 200,
+                "grande": 230
             }
+
         ]
     }
 ]
