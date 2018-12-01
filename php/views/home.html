@@ -1,395 +1,395 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{general.brand}} - {{sucursal.nombre}}</title>
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-    <link href='https://fonts.googleapis.com/css?family=Engagement|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-
-<body class="bg-light" id="top">
-
-    <!-- Ini Navegación principal -->
-
-    <nav id="mainNav" class="sticky-top bg-secondary shadow text-center">
-
-        <div class="jagged-secondary-to-primary px-5 px-md-0">
-            <a href="#top" class="js-scroll-trigger"><img src="../images/logo.png" alt="{{brand}}" class="img-fluid"></a>
-        </div>
-        <div class="bg-primary text-secondary">
-            <strong>{{sucursal.nombre}}</strong>
-        </div>
-
-    </nav>
-
-    <!-- End Navegación principal -->
-
-    <!-- Ini Hero -->
-    <header id="hero" class="shadow">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="display-4 text-white">¿Qué se te<br>antoja hoy?</p>
-
-                    <div class="row">
-                        <div class="col-12 mb-2">
-                            <a href="#especialidades" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Especialidades</a>
-                        </div>
-                        <div class="col-6 mb-2">
-                            <a href="#pizzas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Pizzas</a>
-                        </div>
-                        <div class="col-6 mb-2">
-                            <a href="#ensaladas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Ensaladas</a>
-                        </div>
-                        <div class="col-6 mb-2">
-                            <a href="#bolloplazas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Bolloplazas</a>
-                        </div>
-                        <div class="col-6 mb-2">
-                            <a href="#postres" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Postres</a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                                <a href="#map" class="js-scroll-trigger btn btn-primary btn-block btn-lg"><i class="fa fa-map-marker-alt"></i> Cómo llegar</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md text-center rounded p-2 d-none d-md-block" id="call-to-action">
-                    <p><img src="../images/logo-grande.png" alt="{{brand}}"></p>
-                    <p class="text-primary">Hechas en serio, no en serie</p>
-                    <p class="d-none d-md-block">
-                        <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}"
-                            class="btn btn-info btn-lg"><i class="fa fa-phone"></i> Llama ahora</a>
-                        <a href="https://api.whatsapp.com/send?phone={{general.phonePrefix|replace({' ': ''}) }}{{sucursal.whatsapp|replace({' ': ''})}}" class="btn btn-success btn-lg"><i
-                                class="fab fa-whatsapp"></i> Pide por WhatsApp</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Hero -->
-
-    <!-- Ini Acerca -->
-    <section id="about" class="bg-light jagged-light-to-secondary py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col col-sm-10 col-md-8 text-center">
-                    <p>Somos una pizzería familiar con más de {{ general.years }} años, fundada en 1978. Nuestra
-                        primera sucursal se ubica en el Sur de la Ciudad de México.</p>
-                    <hr class="mx-3">
-                    <p class="small">Las mejores Pizzas de la Ciudad de México. Hacemos pizzas en serio, no en serie.</p>
-                    <hr class="mx-3">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Acerca -->
-
-    <!-- Ini Menú -->
-    <section id="menu" class="py-5 jagged-secondary-to-light">
-
-        <div class="container-fluid">
-
-            <!-- Especialidades -->
-            <div id="especialidades" class="row text-center py-5 bg-light jagged-light-to-secondary">
-                <div class="col">
-                    <h2 class="display-4">Especialidades</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                {% for especialidad in menu[4]['productos'] %}
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
-                    <div class="card text-center h-100">
-                        {% if especialidad.imagen %}
-                        <img class="card-img-top" src="{{especialidad.imagen}}" alt="{{especialidad.nombre}}">
-                        {% endif %}
-                        <div class="card-body">
-                            <p class="card-title text-primary">{{especialidad.nombre}}</p>
-                            {% if especialidad.descripcion %}
-                            <p class="card-text small">{{especialidad.descripcion}}</p>
-                            {% endif %}
-                        </div>
-                        <div class="card-footer text-muted">
-                            <div class="row small">
-                                <div class="col-4">Chica<br>${{especialidad.chica}}</div>
-                                <div class="col-4">Mediana<br>${{especialidad.mediana}}</div>
-                                <div class="col-4">Grande<br>{{especialidad.grande}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <!-- Pizzas -->
-            <div id="pizzas" class="row text-center py-5 bg-light jagged-light-to-secondary">
-                <div class="col">
-                    <h2 class="display-4">Pizzas</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                {% for pizza in menu[0]['productos'] %}
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
-                    <div class="card text-center h-100">
-                        {% if pizza.imagen %}
-                        <img class="card-img-top" src="{{pizza.imagen}}" alt="{{pizza.nombre}}">
-                        {% endif %}
-                        <div class="card-body">
-                            <p class="card-title text-primary">{{pizza.nombre}}</p>
-                            {% if pizza.descripcion %}
-                            <p class="card-text small">{{pizza.descripcion}}</p>
-                            {% endif %}
-                        </div>
-                        <div class="card-footer text-muted">
-                            <div class="row small">
-                                <div class="col-4">Chica<br>${{pizza.chica}}</div>
-                                <div class="col-4">Mediana<br>${{pizza.mediana}}</div>
-                                <div class="col-4">Grande<br>{{pizza.grande}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2 text-center">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Ingredientes extra para pizza</h4>
-                            <p class="card-text">
-                                {% for extra in menu[0]['extras'] %}
-                                <div class="row border-top py-1">
-                                    <div class="col">
-                                        {{extra.nombre}}
-                                    </div>
-                                    <div class="col small">
-                                        Chica: ${{extra.chica}}<br>
-                                        Mediana: ${{extra.mediana}}<br>
-                                        Grande: ${{extra.grande}}<br>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ensaladas -->
-            <div id="ensaladas" class="row text-center py-5 bg-light jagged-light-to-secondary">
-                <div class="col">
-                    <h2 class="display-4">Ensaladas</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                {% for ensalada in menu[1]['productos'] %}
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
-                    <div class="card text-center h-100">
-                        {% if ensalada.imagen %}
-                        <img class="card-img-top" src="{{ensalada.imagen}}" alt="{{ensalada.nombre}}">
-                        {% endif %}
-                        <div class="card-body">
-                            <p class="card-title text-primary">{{ensalada.nombre}}</p>
-                            {% if ensalada.descripcion %}
-                            <p class="card-text small">{{ensalada.descripcion}}</p>
-                            {% endif %}
-                        </div>
-                        <div class="card-footer text-muted">
-                            <div class="row small">
-                                <div class="col">Precio ${{ensalada.precio}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2 text-center">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Ingredientes extra para ensalada</h4>
-                            <p class="card-text">
-                                {% for extra in menu[1]['extras'] %}
-                                <div class="row border-top py-1">
-                                    <div class="col">
-                                        {{extra.nombre}}
-                                    </div>
-                                    <div class="col small">
-                                        Precio: ${{extra.precio}}
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bolloplaza -->
-            <div id="bolloplazas" class="row text-center py-5 bg-light jagged-light-to-secondary">
-                <div class="col">
-                    <h2 class="display-4">Bolloplaza</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                {% for bolloplaza in menu[2]['productos'] %}
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
-                    <div class="card text-center h-100">
-                        {% if bolloplaza.imagen %}
-                        <img class="card-img-top" src="{{bolloplaza.imagen}}" alt="{{bolloplaza.nombre}}">
-                        {% endif %}
-                        <div class="card-body">
-                            <p class="card-title text-primary">{{bolloplaza.nombre}}</p>
-                            {% if bolloplaza.descripcion %}
-                            <p class="card-text small">{{bolloplaza.descripcion}}</p>
-                            {% endif %}
-                        </div>
-                        <div class="card-footer text-muted">
-                            <div class="row small">
-                                <div class="col">Precio ${{bolloplaza.precio}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <!-- Postres Plaza -->
-            <div id="postres" class="row text-center py-5 bg-light jagged-light-to-secondary">
-                <div class="col">
-                    <h2 class="display-4">Postres Plaza</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                {% for postre in menu[3]['productos'] %}
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
-                    <div class="card text-center h-100">
-                        {% if postre.imagen %}
-                        <img class="card-img-top" src="{{postre.imagen}}" alt="{{postre.nombre}}">
-                        {% endif %}
-                        <div class="card-body">
-                            <p class="card-title text-primary">{{postre.nombre}}</p>
-                            {% if postre.descripcion %}
-                            <p class="card-text small">{{postre.descripcion}}</p>
-                            {% endif %}
-                        </div>
-                        <div class="card-footer text-muted">
-                            <div class="row small">
-                                <div class="col">Precio ${{postre.precio}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-
-        </div>
-        <!--termina container del menú-->
-
-    </section>
-    <!-- End Menú -->
-
-    <!-- Ini Mapa -->
-    <section id="map" class="jagged-light-to-secondary text-center bg-light pb-5">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col">
-                    <h2 class="display-4">Cómo llegar</h2>
-                    <p>{{sucursal.direccion}}</p>
-                    <h3>Teléfono</h3>
-                    <ul class="list-unstyled">
-                        {% for telefono in sucursal.telefonos %}
-                        <li class="my-1"><a class="btn btn-secondary" href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{ telefonos|replace({' ': ''}) }}"><i class="fa fa-phone"></i> {{telefono}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <iframe src="{{sucursal.mapa}}" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="container">
-            <div class="row pt-5 justify-content-center">
-                <div class="col-12 col-md-6">
-                    <h2 class="display-4">Horarios</h2>
-                    <ul class="list-unstyled">
-                        <li>Lunes a viernes: 12:00 a 23:30 horas.</li>
-                        <li>Viernes a domingo: 12:00 a 00:00 horas.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row pt-5 justify-content-center">
-                <div class="col-12 col-md-8">
-                    <ul class="list-inline">
-                        <h2 class="display-4 py-5">Sucursales</h2>
-                        {% for suc in sucursales %}
-                        <li class="list-inline-item">
-                            <p><a href="{{suc.url}}">{{suc.nombre}}</a></p>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Mapa -->
-
-    <!-- Botones móvil -->
-    <section id="botones-movil" class="d-md-none fixed-bottom text-center bg-light py-2 ">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}"
-                        class="btn btn-info btn-block"><i class="fa fa-phone fa-3x"></i><br>Llama ahora</a>
-                </div>
-                <div class="col">
-                    <a href="https://api.whatsapp.com/send?phone={{general.phonePrefix|replace({' ': ''}) }}{{sucursal.whatsapp|replace({' ': ''}) }}" class="btn btn-success btn-block"><i
-                            class="fab fa-whatsapp fa-3x"></i><br>Por WhatsApp</a>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Botones Móviles -->
-
-    <!-- Ini Footer -->
-    <footer id="pie" class="bg-secondary pb-5 pb-md-0">
-        <div class="container pb-5 pb-md-0">
-            <div class="row py-5">
-                <div class="col text-center">
-                    Precios sujetos a cambios sin previo aviso. Consulte los precios en la sucursal correspondiente.<br>
-                    <a target="_blank" href="http://www.pizzasplaza.com/terminos-y-condiciones/">Términos y condiciones</a>
-                    |
-                    <a target="_blank" href="http://www.pizzasplaza.com/aviso-de-privacidad/">Aviso de privacidad</a> |
-                    © {{general.thisYear}} Pizzas Plaza. Todos los derechos reservados. </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-
-    <script src="js/jquery.easing.min.js"></script>
-
-    <script src="js/acciones.js"></script>
-
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{general.brand}} - {{sucursal.nombre}}</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Engagement|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-light" id="top">
+
+    <!-- Ini Navegación principal -->
+
+    <nav id="mainNav" class="sticky-top bg-secondary shadow text-center">
+
+        <div class="jagged-secondary-to-primary px-5 px-md-0">
+            <a href="#top" class="js-scroll-trigger"><img src="../images/logo.png" alt="{{brand}}" class="img-fluid"></a>
+        </div>
+        <div class="bg-primary text-secondary">
+            <strong>{{sucursal.nombre}}</strong>
+        </div>
+
+    </nav>
+
+    <!-- End Navegación principal -->
+
+    <!-- Ini Hero -->
+    <header id="hero" class="shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="display-4 text-white">¿Qué se te<br>antoja hoy?</p>
+
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <a href="#especialidades" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Especialidades</a>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <a href="#pizzas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Pizzas</a>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <a href="#ensaladas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Ensaladas</a>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <a href="#bolloplazas" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Bolloplazas</a>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <a href="#postres" class="js-scroll-trigger btn btn-secondary btn-block btn-lg">Postres</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                                <a href="#map" class="js-scroll-trigger btn btn-primary btn-block btn-lg"><i class="fa fa-map-marker-alt"></i> Cómo llegar</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md text-center rounded p-2 d-none d-md-block" id="call-to-action">
+                    <p><img src="../images/logo-grande.png" alt="{{brand}}"></p>
+                    <p class="text-primary">Hechas en serio, no en serie</p>
+                    <p class="d-none d-md-block">
+                        <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}"
+                            class="btn btn-info btn-lg"><i class="fa fa-phone"></i> Llama ahora</a>
+                        <a href="https://api.whatsapp.com/send?phone={{general.phonePrefix|replace({' ': ''}) }}{{sucursal.whatsapp|replace({' ': ''})}}" class="btn btn-success btn-lg"><i
+                                class="fab fa-whatsapp"></i> Pide por WhatsApp</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Hero -->
+
+    <!-- Ini Acerca -->
+    <section id="about" class="bg-light jagged-light-to-secondary py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-sm-10 col-md-8 text-center">
+                    <p>Somos una pizzería familiar con más de {{ general.years }} años, fundada en 1978. Nuestra
+                        primera sucursal se ubica en el Sur de la Ciudad de México.</p>
+                    <hr class="mx-3">
+                    <p class="small">Las mejores Pizzas de la Ciudad de México. Hacemos pizzas en serio, no en serie.</p>
+                    <hr class="mx-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Acerca -->
+
+    <!-- Ini Menú -->
+    <section id="menu" class="py-5 jagged-secondary-to-light">
+
+        <div class="container-fluid">
+
+            <!-- Especialidades -->
+            <div id="especialidades" class="row text-center py-5 bg-light jagged-light-to-secondary">
+                <div class="col">
+                    <h2 class="display-4">Especialidades</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for especialidad in menu[4]['productos'] %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+                    <div class="card text-center h-100">
+                        {% if especialidad.imagen %}
+                        <img class="card-img-top" src="{{especialidad.imagen}}" alt="{{especialidad.nombre}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title text-primary">{{especialidad.nombre}}</p>
+                            {% if especialidad.descripcion %}
+                            <p class="card-text small">{{especialidad.descripcion}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row small">
+                                <div class="col-4">Chica<br>${{especialidad.chica}}</div>
+                                <div class="col-4">Mediana<br>${{especialidad.mediana}}</div>
+                                <div class="col-4">Grande<br>{{especialidad.grande}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Pizzas -->
+            <div id="pizzas" class="row text-center py-5 bg-light jagged-light-to-secondary">
+                <div class="col">
+                    <h2 class="display-4">Pizzas</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for pizza in menu[0]['productos'] %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+                    <div class="card text-center h-100">
+                        {% if pizza.imagen %}
+                        <img class="card-img-top" src="{{pizza.imagen}}" alt="{{pizza.nombre}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title text-primary">{{pizza.nombre}}</p>
+                            {% if pizza.descripcion %}
+                            <p class="card-text small">{{pizza.descripcion}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row small">
+                                <div class="col-4">Chica<br>${{pizza.chica}}</div>
+                                <div class="col-4">Mediana<br>${{pizza.mediana}}</div>
+                                <div class="col-4">Grande<br>{{pizza.grande}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ingredientes extra para pizza</h4>
+                            <p class="card-text">
+                                {% for extra in menu[0]['extras'] %}
+                                <div class="row border-top py-1">
+                                    <div class="col">
+                                        {{extra.nombre}}
+                                    </div>
+                                    <div class="col small">
+                                        Chica: ${{extra.chica}}<br>
+                                        Mediana: ${{extra.mediana}}<br>
+                                        Grande: ${{extra.grande}}<br>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ensaladas -->
+            <div id="ensaladas" class="row text-center py-5 bg-light jagged-light-to-secondary">
+                <div class="col">
+                    <h2 class="display-4">Ensaladas</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for ensalada in menu[1]['productos'] %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+                    <div class="card text-center h-100">
+                        {% if ensalada.imagen %}
+                        <img class="card-img-top" src="{{ensalada.imagen}}" alt="{{ensalada.nombre}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title text-primary">{{ensalada.nombre}}</p>
+                            {% if ensalada.descripcion %}
+                            <p class="card-text small">{{ensalada.descripcion}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row small">
+                                <div class="col">Precio ${{ensalada.precio}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ingredientes extra para ensalada</h4>
+                            <p class="card-text">
+                                {% for extra in menu[1]['extras'] %}
+                                <div class="row border-top py-1">
+                                    <div class="col">
+                                        {{extra.nombre}}
+                                    </div>
+                                    <div class="col small">
+                                        Precio: ${{extra.precio}}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolloplaza -->
+            <div id="bolloplazas" class="row text-center py-5 bg-light jagged-light-to-secondary">
+                <div class="col">
+                    <h2 class="display-4">Bolloplaza</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for bolloplaza in menu[2]['productos'] %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+                    <div class="card text-center h-100">
+                        {% if bolloplaza.imagen %}
+                        <img class="card-img-top" src="{{bolloplaza.imagen}}" alt="{{bolloplaza.nombre}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title text-primary">{{bolloplaza.nombre}}</p>
+                            {% if bolloplaza.descripcion %}
+                            <p class="card-text small">{{bolloplaza.descripcion}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row small">
+                                <div class="col">Precio ${{bolloplaza.precio}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Postres Plaza -->
+            <div id="postres" class="row text-center py-5 bg-light jagged-light-to-secondary">
+                <div class="col">
+                    <h2 class="display-4">Postres Plaza</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for postre in menu[3]['productos'] %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+                    <div class="card text-center h-100">
+                        {% if postre.imagen %}
+                        <img class="card-img-top" src="{{postre.imagen}}" alt="{{postre.nombre}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title text-primary">{{postre.nombre}}</p>
+                            {% if postre.descripcion %}
+                            <p class="card-text small">{{postre.descripcion}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div class="row small">
+                                <div class="col">Precio ${{postre.precio}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+        <!--termina container del menú-->
+
+    </section>
+    <!-- End Menú -->
+
+    <!-- Ini Mapa -->
+    <section id="map" class="jagged-light-to-secondary text-center bg-light pb-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col">
+                    <h2 class="display-4">Cómo llegar</h2>
+                    <p>{{sucursal.direccion}}</p>
+                    <h3>Teléfono</h3>
+                    <ul class="list-unstyled">
+                        {% for telefono in sucursal.telefonos %}
+                        <li class="my-1"><a class="btn btn-secondary" href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{ telefonos|replace({' ': ''}) }}"><i class="fa fa-phone"></i> {{telefono}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <iframe src="{{sucursal.mapa}}" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="container">
+            <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <h2 class="display-4">Horarios</h2>
+                    <ul class="list-unstyled">
+                        <li>Lunes a viernes: 12:00 a 23:30 horas.</li>
+                        <li>Viernes a domingo: 12:00 a 00:00 horas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-8">
+                    <ul class="list-inline">
+                        <h2 class="display-4 py-5">Sucursales</h2>
+                        {% for suc in sucursales %}
+                        <li class="list-inline-item">
+                            <p><a href="{{suc.url}}">{{suc.nombre}}</a></p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Mapa -->
+
+    <!-- Botones móvil -->
+    <section id="botones-movil" class="d-md-none fixed-bottom text-center bg-light py-2 ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}"
+                        class="btn btn-info btn-block"><i class="fa fa-phone fa-3x"></i><br>Llama ahora</a>
+                </div>
+                <div class="col">
+                    <a href="https://api.whatsapp.com/send?phone={{general.phonePrefix|replace({' ': ''}) }}{{sucursal.whatsapp|replace({' ': ''}) }}" class="btn btn-success btn-block"><i
+                            class="fab fa-whatsapp fa-3x"></i><br>Por WhatsApp</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Botones Móviles -->
+
+    <!-- Ini Footer -->
+    <footer id="pie" class="bg-secondary pb-5 pb-md-0">
+        <div class="container pb-5 pb-md-0">
+            <div class="row py-5">
+                <div class="col text-center">
+                    Precios sujetos a cambios sin previo aviso. Consulte los precios en la sucursal correspondiente.<br>
+                    <a target="_blank" href="http://www.pizzasplaza.com/terminos-y-condiciones/">Términos y condiciones</a>
+                    |
+                    <a target="_blank" href="http://www.pizzasplaza.com/aviso-de-privacidad/">Aviso de privacidad</a> |
+                    © {{general.thisYear}} Pizzas Plaza. Todos los derechos reservados. </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script src="js/acciones.js"></script>
+
+</body>
+
 </html>
