@@ -133,7 +133,7 @@
 
                     <p class="d-none d-md-block">
 
-                        <a href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{sucursal.telefonos[0]|replace({' ': ''}) }}"
+                        <a href="tel:{{sucursal.telefonos[0]|replace({' ': ''}) }}"
 
                             class="btn btn-info btn-lg"><i class="fa fa-phone"></i> Llama ahora</a>
 
@@ -627,7 +627,8 @@
 
                         {% for telefono in sucursal.telefonos %}
 
-                        <li class="my-1"><a class="btn btn-secondary" href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{ telefonos|replace({' ': ''}) }}"><i class="fa fa-phone"></i> {{telefono}}</a></li>
+                        <!--<li class="my-1"><a class="btn btn-secondary" href="tel:{{general.phonePrefix|replace({' ': ''}) }}{{ telefono|replace({' ': ''}) }}"><i class="fa fa-phone"></i> {{telefono}}</a></li>-->
+                        <li class="my-1"><a class="btn btn-secondary" href="tel:{{ telefono|replace({' ': ''}) }}"><i class="fa fa-phone"></i> {{telefono}}</a></li>
 
                         {% endfor %}
 
